@@ -6,25 +6,44 @@
 <h1> Viral Time Capsule </h1>
 <h2> "Welcome to the Past Decade 2029 Users!"
 <p> Disclamer: This time capsule was created and developed by the wonderful team of Emy, Keeshawn, Jack, Shawn, and Anita. </p>
-<link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
 </head>
-
+<style>
+a:hover{color:black;}
+</style>
 <body>
-<body text="white">
+<!-- <body text="white"> -->
 <div class="opening">The Purpose of this time capsule is to give a collection on important events that revoled around the call-out/outrage/cancel culture that appeared throughout 2015-2019 for viewers, thats you 2029 guys, to read, think, and form your own opinions of these events. Call out culture as defined by wikipeadia is "is the social phenomenon of publicly denouncing perceived racism, sexism, homophobia, transphobia, classism, national interest, and other forms of bigotry. Denunciation can happen in person or online." It is important to note that the vast majority of people during this time have access to internet and therefore even things said in person usually end up online.</div>
 <br>
 <p class="opening">Without further ado click the button below to open the time capsule at the appropriate time.</p>
 <button  id="begin" onlick()="start" title="Will put you into Time Capsule.">Time Capsule</button>
 
 <article class="hidden">
-<a href="https://www.nytimes.com/2019/01/14/opinion/call-out-social-justice.html">
+
+<a href="https://www.nytimes.com/2019/01/14/opinion/call-out-social-justice.html" target="_blank">
 <h3>The harmful side to call out culture</h3>
-<p><img src="/Pics/cc.jpg" alt="Current Call-out Culture"></p>
+<p><img src="/Pics/MeToo.jfif" alt="Current Call-out Culture"></p>
 </a>
+<p>In early 2019, David Brooks posted a article recounting a recent experience with the power and consquences of current call-out culture on people lives.</p>
+<!-- <br> -->
+<a href="https://www.avclub.com/netflix-fires-kevin-spacey-from-house-of-cards-cancels-1820135964" target="_blank">
+<h3>Cancellation Culture at its Finest</h3>
+<p><img src="/Pics/HOC.png" alt="Popular Netflix Serires"></p>
+</a>
+<p>The former favorite double-Academy Award winner got canceled amid sexual misconduct allegations. The House of Cards star tasted the bitter tasted of cancel culture dues to misbehavior of more than 30 years ago.</p>
 </article>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="main.js"></script>
+<script>
+$(document).ready(function(){
+$('.hidden').hide();
+ $('#begin').click(function(){
+  $('.opening').hide();
+  $('#begin').hide();
+  $('.hidden').show();
+ });
+});
+</script>
 
 </body>
 </html>
