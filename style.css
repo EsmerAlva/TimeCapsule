@@ -40,3 +40,23 @@ div.opening{
   margin: 4px 2px;
   cursor: pointer;
 }
+.horizontal-scroll-wrapper {
+  background-color: #444444;
+  position: absolute;
+  width: 120px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform:rotate(-90deg) translateY(40em);
+  /* transform: rotate(-90deg); */
+  transform-origin: middle top;
+}
+.horizontal-scroll-wrapper > div {
+  /* width: 100px;
+  height: 120px; */
+  transform: rotate(90deg);
+  /* transform-origin: middle top; */
+}
+h2{
+  padding-top: 200px;
+}
